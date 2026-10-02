@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>American Traditional Masonry LLC — Paver, Brick, Stone &amp; Concrete | Cleveland, OH</title>
-  <meta name="description" content="American Traditional Masonry LLC — paver, brick, stone, and concrete work in Greater Cleveland, Ohio. Patios, walkways, steps, fire pits, and hardscape. Craftsmanship built to last. Call (000) 000-0000.">
+  <meta name="description" content="American Traditional Masonry LLC — paver, brick, stone, and concrete work in Greater Cleveland, Ohio. Patios, walkways, steps, fire pits, and hardscape. Craftsmanship built to last. Call (216) 256-6287.">
   <meta name="theme-color" content="#1e1a18">
   <link rel="canonical" href="https://mjacobg2002-ant.github.io/american-traditional-masonry/">
 
@@ -35,7 +35,7 @@
     "@type": "GeneralContractor",
     "name": "American Traditional Masonry LLC",
     "image": "assets/img/work-1.jpg",
-    "telephone": "+1-(000) 000-0000",
+    "telephone": "+1-216-256-6287",
     "url": "https://mjacobg2002-ant.github.io/american-traditional-masonry/",
     "slogan": "Craftsmanship built to last.",
     "areaServed": ["Cleveland OH","Lakewood OH","Parma OH","Strongsville OH","Westlake OH","Rocky River OH","Shaker Heights OH","Beachwood OH","Solon OH","Mentor OH"],
@@ -68,9 +68,9 @@
     </nav>
 
     <div class="header__actions">
-      <a class="header__phone" href="tel:+10000000000" aria-label="Call American Traditional Masonry at (000) 000-0000">
+      <a class="header__phone" href="tel:+12162566287" aria-label="Call American Traditional Masonry at (216) 256-6287">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z" fill="currentColor"/></svg>
-        <span>(000) 000-0000</span>
+        <span>(216) 256-6287</span>
       </a>
       <a class="btn btn--primary header__cta" href="#estimate">Free Estimate</a>
     </div>
@@ -93,7 +93,7 @@
   </nav>
   <div class="mobile-menu__actions">
     <a class="btn btn--primary btn--block" href="#estimate">Free Estimate</a>
-    <a class="btn btn--outline-light btn--block" href="tel:+10000000000">Call (000) 000-0000</a>
+    <a class="btn btn--outline-light btn--block" href="tel:+12162566287">Call (216) 256-6287</a>
   </div>
 </div>
 
@@ -102,11 +102,19 @@
   <!-- ============================ HERO ============================ -->
   <section class="hero hero--video" aria-labelledby="hero-title">
     <div class="hero__bg" aria-hidden="true">
-      <video class="hero__video" autoplay muted loop playsinline preload="auto"
+      <video id="heroVideo" class="hero__video" autoplay muted loop playsinline preload="auto"
              poster="assets/video/hero-poster.jpg">
-        <source src="assets/video/hero-720.mp4" type="video/mp4">
+        <source id="heroSource" src="assets/video/hero-720.mp4" type="video/mp4">
       </video>
     </div>
+    <script>
+      (function () {
+        if (window.matchMedia && window.matchMedia('(max-width: 900px)').matches) {
+          var v = document.getElementById('heroVideo'), s = document.getElementById('heroSource');
+          if (v && s) { s.src = 'assets/video/hero-mobile.mp4'; v.setAttribute('poster', 'assets/video/hero-mobile-poster.jpg'); v.load(); }
+        }
+      })();
+    </script>
     <div class="shell hero__inner">
       <div class="hero__content">
         <p class="eyebrow" data-reveal>Paver · Brick · Stone · Concrete · Cleveland, OH</p>
@@ -122,9 +130,9 @@
           <a class="btn btn--primary btn--lg" href="#estimate">Get a Free Estimate</a>
           <a class="btn btn--outline btn--outline-light btn--lg" href="#work">View Our Work</a>
         </div>
-        <a class="hero__phone" href="tel:+10000000000" data-reveal>
+        <a class="hero__phone" href="tel:+12162566287" data-reveal>
           <span class="hero__phone-label">Call for a free estimate</span>
-          <span class="hero__phone-num">(000) 000-0000</span>
+          <span class="hero__phone-num">(216) 256-6287</span>
         </a>
       </div>
     </div>
@@ -450,7 +458,7 @@
       </p>
       <div class="cta__actions" data-reveal>
         <a class="btn btn--primary btn--lg" href="#estimate">Get a Free Estimate</a>
-        <a class="btn btn--outline btn--outline-light btn--lg" href="tel:+10000000000">Call (000) 000-0000</a>
+        <a class="btn btn--outline btn--outline-light btn--lg" href="tel:+12162566287">Call (216) 256-6287</a>
       </div>
     </div>
   </section>
@@ -465,7 +473,7 @@
 
         <dl class="contact__details" data-reveal>
           <div><dt>Company</dt><dd>American Traditional Masonry LLC</dd></div>
-          <div><dt>Phone</dt><dd><a href="tel:+10000000000">(000) 000-0000</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+12162566287">(216) 256-6287</a></dd></div>
           <div><dt>Service area</dt><dd>Greater Cleveland, OH</dd></div>
           <div><dt>Hours</dt><dd>Mon–Fri 8a–5p · Sat 8a–1p · Sun closed</dd></div>
           <div><dt>Service area</dt><dd>Greater Cleveland, OH</dd></div>
@@ -555,7 +563,7 @@
 
     <div class="footer__col footer__contact">
       <h3>Contact</h3>
-      <a href="tel:+10000000000">(000) 000-0000</a>
+      <a href="tel:+12162566287">(216) 256-6287</a>
       <span class="footer__addr">Greater Cleveland, OH</span>
       <span>Facebook — coming soon</span>
       <span>Instagram — coming soon</span>
